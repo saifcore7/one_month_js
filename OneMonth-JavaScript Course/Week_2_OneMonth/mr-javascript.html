@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr JavaScript</title>
+  </head>
+  <body>
+    <h1 class="heading">Mr JavaScript</h1>
+    <button class="first">Reset</button>
+    <button class="second">Change</button>
+  </body>
+  <script>
+    var text = prompt("Enter the text");
+    var a = document.querySelector(".second");
+    var h1 = document.querySelector("h1");
+    var a1 = document.querySelector(".first");
+    var reset = h1.innerHTML;
+    a1.addEventListener("click", function () {
+      h1.innerHTML = "I am alive";
+    });
+    a.addEventListener("click", function () {
+      h1.innerHTML = text;
+    });
+  </script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Method</title>
+    <style type="text/css">
+      body {
+        background: #87cefa;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // For Each loops through data and executes once per array element
+
+      // cities examples
+      var cities = ["Delhi", "Mumbai", "Kanpur"];
+      cities.forEach(function (city) {
+        console.log(city);
+      });
+
+      //key value pair
+      var p = [
+        { name: "Saif", location: "Kanpur" },
+        { name: "Chris", location: "NYC" },
+      ];
+
+      p.forEach(function (person) {
+        console.log(person.location);
+        if (person.location == "NYC") {
+          document.write("Hello " + person.name);
+        }
+      });
+
+      var numbers = [2, 3, 4];
+      var mapp = numbers.map(function (num) {
+        return num * 2;
+      });
+      console.log(mapp);
+
+      var a = [
+        { name: "Saif", loccation: "Kanpur" },
+        { name: "Chris", location: "NYC" },
+      ];
+      var mappp = a.map(function (b) {
+        return b.name;
+      });
+      console.log(mappp);
+    </script>
+  </body>
+</html>

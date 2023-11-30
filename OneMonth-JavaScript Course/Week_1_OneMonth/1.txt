@@ -1,0 +1,11 @@
+10 concepts that are same in every coding language
+events
+comments
+print
+variables
+datatypes
+conditionals
+functions
+arrays
+concatenation
+debugging

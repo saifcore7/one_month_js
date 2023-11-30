@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays</title>
+  </head>
+  <body style="background-color: #ff6600">
+    <script>
+      var userName = prompt("Hello, Who are you?");
+      var car = [
+        {
+          name: "Bmw",
+          image: "./images/BMW.jpg",
+        },
+        {
+          name: "Saab",
+          image: "./images/Saab.jpg",
+        },
+        {
+          name: "Maserati",
+          image: "./images/Maserati.jpg",
+        },
+      ];
+      var randomNumber = Math.floor(Math.random() * car.length);
+      if (userName === "Saif" || userName === "Chris") {
+        document.write(
+          "<h1>Hello " +
+            userName +
+            " you won a " +
+            " " +
+            car[randomNumber].name +
+            "</h1>"
+        );
+        var imageElement = document.createElement("img");
+        imageElement.src = car[randomNumber].image;
+        document.body.appendChild(imageElement);
+      } else {
+        document.write("<h1>Sorry you won nothing!!😢</h1>");
+      }
+    </script>
+  </body>
+</html>
